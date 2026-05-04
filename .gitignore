@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+saved_model/
+outputs/
+.DS_Store
+.env
