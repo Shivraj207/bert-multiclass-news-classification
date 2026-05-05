@@ -1,9 +1,10 @@
 import torch
+import torch.nn.functional as F
 from src.model import model, tokenizer, device
 from src.config import LABEL_NAMES, MAX_LENGTH
 
 
-def predict_news_category(text: str) -> str:
+def predict_news_category(text: str):
     inputs = tokenizer(
         text,
         padding="max_length",
@@ -17,10 +18,10 @@ def predict_news_category(text: str) -> str:
 
     with torch.no_grad():
         outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-        predicted_class = torch.argmax(outputs.logits, dim=1).item()
+        probs = F.softmax(outputs.logits, dim=1)
+        confidence, predicted_class = torch.max(probs, dim=1)
 
-    return LABEL_NAMES[predicted_class]
-
+    return LABEL_NAMES[predicted_class.item()], confidence.item()
 
 if __name__ == "__main__":
     text = "Apple announced new AI features for the upcoming iPhone."

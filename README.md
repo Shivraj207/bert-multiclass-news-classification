@@ -96,7 +96,7 @@ For example:
 ---
 ## 📊 Confusion Matrix
 
-![Confusion Matrix](outputs/plots/confusion_matrix.png)
+![Confusion Matrix][def]
 
 ## ▶️ How to Run
 
@@ -136,3 +136,8 @@ python main.py
 ## 📌 Conclusion
 
 This project demonstrates how **pre-trained language models like BERT significantly improve text classification tasks**, while also highlighting challenges in handling semantically overlapping categories.
+
+
+
+#Confusion Matrix Image
+[def]: outputs/plots/confusion_matrix.png
