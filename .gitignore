@@ -2,6 +2,8 @@ venv/
 __pycache__/
 .ipynb_checkpoints/
 saved_model/
-outputs/
+outputs/*
+!outputs/plots/
+!outputs/plots/confusion_matrix.png
 .DS_Store
 .env
