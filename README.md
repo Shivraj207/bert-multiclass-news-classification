@@ -127,8 +127,7 @@ saved_model/bert_ag_news/
 ## Future Improvements
 
 - Train on larger dataset / more epochs  
-- Compare with baseline models (Logistic Regression, LSTM)  
-- Deploy using Streamlit or FastAPI  
+- Compare with baseline models (Logistic Regression, LSTM)    
 - Use DistilBERT for faster inference  
 
 ---
