@@ -65,10 +65,13 @@ bert-multiclass-news-classification/
 
 ---
 
-## 📊 Results
+## Results
 
-- **Accuracy:** ~92%
-- **F1 Score (Macro Avg):** ~0.92
+| Metric | Score |
+|---|---|
+| Accuracy | 88% |
+| Macro F1-Score | 0.88 |
+| Weighted F1-Score | 0.88 |
 
 ### 🔍 Key Observations
 
