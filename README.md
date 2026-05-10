@@ -21,6 +21,7 @@ This project leverages **Transformer-based architecture (BERT)** to capture sema
 ---
 
 ## Project Structure
+```text
 bert-multiclass-news-classification/
 │
 ├── notebooks/
@@ -40,7 +41,7 @@ bert-multiclass-news-classification/
 ├── main.py
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Tech Stack
