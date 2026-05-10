@@ -7,7 +7,7 @@ from src.predict import predict_news_category
 
 st.set_page_config(page_title="BERT News Classifier", layout="centered")
 
-st.title("🧠 BERT News Classification")
+st.title("BERT News Classification")
 st.write("Classify news into World, Sports, Business, or Sci/Tech")
 
 # Input box
@@ -17,14 +17,20 @@ user_input = st.text_area("Enter News Text:")
 st.write("### Try Examples:")
 col1, col2 = st.columns(2)
 
+sports_text = "Virat Kohli scored a century as India defeated Australia in the ICC Cricket World Cup final."
+tech_text = "Google launched a new artificial intelligence model with advanced reasoning capabilities."
+
 with col1:
-    if st.button("Sports Example"):
-        user_input = "India won the cricket World Cup final"
+    if st.button("⚽ Sports Example"):
+        st.write(sports_text)
+        print(sports_text)
+        
 
 with col2:
-    if st.button("Tech Example"):
-        user_input = "Google launched a new AI model"
-
+    if st.button("⚽ Tech Example"):
+        st.write(tech_text)
+        print(tech_text)
+        
 # Prediction
 if st.button("Predict"):
     if user_input.strip() == "":

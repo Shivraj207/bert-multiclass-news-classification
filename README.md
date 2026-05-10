@@ -1,6 +1,6 @@
-# 🧠 BERT-Based Multi-Class News Classification
+# BERT-Based Multi-Class News Classification
 
-## 📌 Project Overview
+## Project Overview
 
 This project focuses on classifying news articles into four categories:
 
@@ -13,14 +13,14 @@ A pre-trained **BERT (bert-base-uncased)** model is fine-tuned on the **AG News 
 
 ---
 
-## 🚀 Motivation
+## Motivation
 
 Traditional models struggle with understanding context in text data.  
 This project leverages **Transformer-based architecture (BERT)** to capture semantic meaning and improve classification performance.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 bert-multiclass-news-classification/
 │
 ├── notebooks/
@@ -43,7 +43,7 @@ bert-multiclass-news-classification/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - Python  
 - PyTorch  
@@ -53,7 +53,7 @@ bert-multiclass-news-classification/
 
 ---
 
-## 🧠 Model Details
+## Model Details
 
 - Model: `bert-base-uncased`
 - Task: Multi-class classification
@@ -75,7 +75,7 @@ bert-multiclass-news-classification/
   - **World ↔ Sci/Tech**
   - **Sports ↔ Sci/Tech**
 
-### 📉 Reason for Errors
+### Reason for Errors
 
 This is due to **semantic overlap** between categories.  
 For example:
@@ -85,7 +85,7 @@ For example:
 
 ---
 
-## 🧪 Sample Predictions
+## Sample Predictions
 
 | Input Text | Predicted Category |
 |----------|------------------|
@@ -94,7 +94,7 @@ For example:
 | Stock markets surged after earnings | Business |
 
 ---
-## 📊 Confusion Matrix
+## Confusion Matrix
 
 ![Confusion Matrix][def]
 
@@ -114,8 +114,17 @@ python main.py
 
 
 ---
+## Model Weights
 
-## 💡 Future Improvements
+The trained BERT model weights are not included in this repository because the saved model size is around 419 MB.
+
+To use the app locally, either:
+1. Run the training notebook to generate the saved model, or
+2. Place the trained model inside:
+
+saved_model/bert_ag_news/
+
+## Future Improvements
 
 - Train on larger dataset / more epochs  
 - Compare with baseline models (Logistic Regression, LSTM)  
@@ -124,7 +133,7 @@ python main.py
 
 ---
 
-## 🎯 Key Learnings
+## Key Learnings
 
 - Hands-on experience with Transformer models  
 - Understanding tokenization (input_ids, attention_mask)  
@@ -133,7 +142,7 @@ python main.py
 
 ---
 
-## 📌 Conclusion
+## Conclusion
 
 This project demonstrates how **pre-trained language models like BERT significantly improve text classification tasks**, while also highlighting challenges in handling semantically overlapping categories.
 
